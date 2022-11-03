@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./index.css">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <title>spotify</title>
 </head>
 
 <body>
@@ -19,15 +21,15 @@
                 </path>
             </svg>
         </div>
-        <div class="menu">
-            <div class="menu--item">
+        <div class="menu main-menu">
+            <div class="menu--item active">
                 <a href="#">
-                    <img src="./fontawesome-pro-5.15.1-desktop/svgs/solid/house.svg" style: width="25px" ; height="25px" alt=""> <span class="menu--item--text">Home</span>
+                    <i class="lni-home"></i> <span class="menu--item--text">Home</span>
                 </a>
             </div>
             <div class="menu--item">
                 <a href="#">
-                    <img src="" alt=""> <span class="menu--item--text">Search</span>
+                    <i class="lni-search"></i> <span class="menu--item--text">Search</span>
                 </a>
             </div>
             <div class="menu--item">
@@ -55,7 +57,7 @@
         <div class="menu menu-playlist">
             <div class="menu--item">
                 <a href="#">
-                    <span class="menu--item--text">Dev</span>
+                    <span class="menu--item--text">Click to create an album</span>
                 </a>
             </div>
             <div class="menu--item">
@@ -70,8 +72,122 @@
             </a>
         </div>
     </nav>
-    <div class="header"></div>
-    <main></main>
+    <div class="header">
+        <div class="header--bg"></div>
+        <div class="header--actions">
+            <div class="header--buttons">
+                <button class="header--button previous"><i class="lni-chevron-left"></i></button>
+                <button class="header--button next"><i class="lni-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown--button">
+                <span class="user-icon"><i class="lni-user"></i></span>
+                <span class="text-bold">Chu</span>
+                <span><i class="lni-chevron-down"></i></span>
+            </button>
+            <ul class="dropdown--content">
+                <li>Account</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="section">
+            <div class="section--header">
+                <div class="section--header--left">
+                    <h2 class="title">Welcome Back!</h2>
+                </div>
+                <div class="section--header--right">
+                    <a href="#" class="section--header--right--more">VIEW ALL</a>
+                </div>
+            </div>
+            <div class="section--body">
+                <div class="section--body--item album--item">
+                    <div class="section--body--item--img">
+                        <img src="http://via.placeholder.com/150x150" alt="">
+                    </div>
+                    <p class="section--body--item--title">Album name</p>
+                    <p class="section--body--item--subtitle"><a href="#">Artist name</a></p>
+                    <div class="section--body--item--play">
+                        <i class="lni lni-play"></i>
+                    </div>
+                </div>
+
+                <div class="section--body--item artist--item">
+                    <div class="section--body--item--img">
+                        <img src="http://via.placeholder.com/150x150" alt="">
+                    </div>
+                    <p class="section--body--item--title">Đen</p>
+                    <p class="section--body--item--subtitle">Artist</p>
+                    <div class="section--body--item--play">
+                        <i class="lni lni-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section--header">
+                <div class="section--header--left">
+                    <h2 class="title">Jump back in</h2>
+                    <h3 class="subtitle">What you listened most in the last months.</h3>
+                </div>
+            </div>
+            <div class="section--body">
+                <div class="section--body--item album--item">
+                    <div class="section--body--item--img">
+                        <img src="http://via.placeholder.com/150x150" alt="">
+                    </div>
+                    <p class="section--body--item--title">Album name</p>
+                    <p class="section--body--item--subtitle"><a href="#">Artist name</a></p>
+                    <div class="section--body--item--play">
+                        <i class="lni lni-play"></i>
+                    </div>
+                </div>
+
+                <div class="section--body--item artist--item">
+                    <div class="section--body--item--img">
+                        <img src="http://via.placeholder.com/150x150" alt="">
+                    </div>
+                    <p class="section--body--item--title">Đen</p>
+                    <p class="section--body--item--subtitle">Artist</p>
+                    <div class="section--body--item--play">
+                        <i class="lni lni-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="bottom-bar">
+        <div class="bottom-bar--left-col">
+            <div class="bottom-bar--left-col--song">
+                <div class="bottom-bar--left-col--song--img">
+                    <div class="bottom-bar--left-col--song--img--pull-up">
+                        <i class='lni lni-chevron-up'></i>
+                    </div>
+                    <img src="http://via.placeholder.com/150x150" alt="">
+                </div>
+                <div class="bottom-bar--left-col--song--details">
+                    <div class="bottom-bar--left-col--song--details--wrapper">
+                        <a href="#" class="bottom-bar--left-col--song--details--title">Song Title</a>
+                    </div>
+                    <div class="bottom-bar--left-col--song--details--wrapper">
+                        <a href="#" class="bottom-bar--left-col--song--details--artist">Artist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar--left-col--actions">
+                <button class="bottom-bar--left-col--actions--favorite">
+                    <i class='lni lni-heart'></i>
+                </button>
+                <button class="bottom-bar--left-col--actions--pip">
+                    <i class="pip-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
