@@ -744,11 +744,20 @@ main {
     margin-left: 51.4%;
 }
 .bottom-bar--left-col-right-queue{
-    width: 40px;
-    height: 40px;
-    border: none;
+    background:transparent;
     display: flex;
+    align-items: center;
     position: absolute;
-    margin-bottom: 50px;
-    margin-left: 800px;
+    margin-bottom: 1000px;
+    margin-left: 1400px;
+}
+.queue{
+    scale: 0.53;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 1.5px;
+    margin-left: -135px;
 }
