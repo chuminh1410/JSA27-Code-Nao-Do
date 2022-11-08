@@ -21,7 +21,7 @@ function validate() {
     return false;
     }
     else if(p1=="123456789"){
-        window.location.href = "./"
+        window.location.href = '/path'
         alert("thông tin chính xác!")
         return true;
         
