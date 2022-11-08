@@ -21,7 +21,7 @@ function validate() {
     return false;
     }
     else if(p1=="123456789"){
-        window.location="https://github.com/nam2006/bu-i-1"
+        window.location.href = "./"
         alert("thông tin chính xác!")
         return true;
         
